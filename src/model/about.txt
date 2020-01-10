@@ -1,0 +1,91 @@
+The room_map file outlines the names of the directories that contains the rooms
+that need to be loaded into memory.
+Each name will have an associated number id with it.
+
+
+In each room_layout file, the first macro line will specify the size of the room,
+else the room will be considered empty.
+This will define the dynamic array the program will need to define so that the
+environmental blocks can be loaded into memory.
+
+The blocks below this will be loaded in.
+Any spaces will be ignored
+For any lines that start with a slash, ‘/‘, the rest of the line will be ignored
+
+
+The exit macro defines the following link between exits in other rooms
+
+
+
+The exits have the form:
+
+    room_num   room_exit   switch_id   status
+
+where, status has binary digits: (right to left, i.e. is locked <==> 0001 / 0000
+
+    is_locked   is_switch   is_bomb   is_portal
+
+
+
+Where room_num, is the number id of the room, 
+room_exit refers to the n-th exit in that room,
+
+the 4-bool statements, will be given as a single binary number, 
+with digits, 1==> true, 0==> false 
+
+1 <==> 1000
+2 <==> 0100    3 <==> 1100
+4 <==> 0010    5 <==> 1010    6 <==> 0110    7 <==> 1110
+8 <==> 0001    9 <==> 1001    10 <=> 0101    11 <=> 1101    12 <=> 0011
+               13 <=> 1011    14 <=> 0111    15 <=> 1111
+
+
+Additional door ideas:
+	- cursed door, take damage when enter.
+
+
+Room exits are read across the array. That is, read horizontally to the right, then
+increment by 1 vertically downwards.
+
+
+
+
+Ten layout information:
+$ <item_type> <x>,<y> <v_x>,<v_y> <number> <msg>
+
+
+
+
+Enemy layout information:
+
+$ <enemy_type>  <x>,<y>  <v_x>,<v_y>  <challenge>  <item_bool>  <default> 
+(this only if d != 0)
+
+$ <health> <clock> <mass> <rnd> <vis_dist> <eyesight> <ai> <touch_damage> <shield>
+
+if item_bool, the next line should be an item, form: <num> <msg>
+Anything less than zero ==> default
+
+ - vis_dist ==> vision distance, how far the enemy can see in front of itself
+ - eyesight ==> which directions can it see in w,a,s,d ==> 1,2,3,4
+
+
+
+If Item_bool < 0, have item but don’t drop
+else if Item_bool > 0 drop item.
+AI LEVELS:
+0  ==>  Static
+1  ==>  Random jiggle
+2  ==>  Vision local hunt
+3  ==>  Maze hunter
+
+
+
+
+
+For all the above, the following special keywords apply to msg,
+ - NONE ==> no message to give
+ - DEFAULT ==> give the default message
+
+The message variable specifies the msg the player will receive when they interact
+with the item, or pick it up from a chest/container.

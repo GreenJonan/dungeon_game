@@ -1,0 +1,23 @@
+// <npc_type>  <x>,<y>  <has_items>  <hp>  <name>  <dialogue_msg>
+//
+//
+// hp < 0 ==> immune to all damage, 0 ==> instant death,
+// hp > 0 ==> become aggressive and transform into an enemy type object.
+// 
+//  If has items, then (new line), ‘$’ new items until ‘#’ indicating end of block
+//
+//  $ ITEM_TYPE  x,y  cost  number msg
+//
+// In fact, # will be used to indicate the end of an npc block
+//
+
+$ SHOPKEEPER 11,3 1 -1 DEFAULT `Welcome! feel free to browse.`
+$ KEY 4,3 5 1 Key
+$ HEART 6,3 1 1 ``
+$ HEART 6,3 1 1 ``
+$ HEART 6,3 1 1 ``
+$ HEART 6,3 1 1 ``
+$ HEART 6,3 1 1 ``
+$ BOMB 8,3 5 5 ``
+$ BOMB 8,3 5 5 ``
+#

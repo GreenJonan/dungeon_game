@@ -1,0 +1,26 @@
+# DEFAULT
+// hence information below is not read
+
+# STATUS
+$ MAX_HEALTH 6
+$ HEALTH 3
+$ MANA 0
+$ MAX_MANA 0
+$ ROOM 1
+$ POSITION 1,1
+$ CLOCK 4
+$ TIMER 0
+$ MASS 100
+$ VELOCITY 0,0
+$ FLY 0
+$ STATUS 1,0,0,1
+$ DIRECTION 0
+$ LIGHT_DIST 5
+#
+
+
+# ITEMS
+$ BASIC_SWORD 1
+#
+
+# MOVES 

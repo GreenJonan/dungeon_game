@@ -1,0 +1,2 @@
+// <item>  <x>,<y>  <v_x>,<v_y>  <number>  <msg>
+$ BOMB 10,2 0,0 5 DEFAULT

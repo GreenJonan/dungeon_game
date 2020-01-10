@@ -1,0 +1,49 @@
+
+    TILE CONVERSION:
+
+
+# CLIPABLE BLOCKS
+WALL            0
+REFLECT WALL    1
+INVISIBLE WALL  2
+DARK WATER      4
+CRACKED WALL    %
+
+
+# NON-CLIP BLOCKS
+FLOOR           `
+OPAQUE WALL     !
+LIGHT WATER     :
+LADDER          L
+
+
+# DAMAGE BLOCKS
+SPIKE           ^
+HOLE            h
+
+
+# SPECIAL BLOCKS
+CHEST           C
+DOOR            &
+
+
+# TECHNICAL BLOCKS
+FLAG            F
+TELEPHONE       T
+SWITCH          +
+PUSH BLOCK      P
+POP BLOCK       U
+LAMP            ?
+
+
+
+
+
+ENEMY TYPES:
+ORB
+BABY_SLIME
+SLIME
+SKELETON
+ZOMBIE
+GHOST
+KNIGHT

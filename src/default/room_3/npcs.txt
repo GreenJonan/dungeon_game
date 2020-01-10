@@ -1,0 +1,12 @@
+// <npc_type>  <x>,<y>  <has_items>  <hp>  <name>  <dialogue_msg>
+//
+//
+// hp < 0 ==> immune to all damage, 0 ==> instant death,
+// hp > 0 ==> become aggressive and transform into an enemy type object.
+// 
+//  If has items, then (new line), ‘$’ new items until ‘#’ indicating end of block
+//
+//  $ ITEM_TYPE  x,y  cost  number msg
+//
+// In fact, # will be used to indicate the end of an npc block
+//

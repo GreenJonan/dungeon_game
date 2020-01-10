@@ -1,0 +1,30 @@
+
+# SIZE 13 7
+00&0 00000 0000
+0+L2 02222 20?0
+02L2 0C``` ``00
+02L2 00000 L000
+02L2 22222 L220
+0`L` ````` L``0
+0000 00000 0000
+
+# STATUS 1 1
+
+
+# EXIT
+$ 6 1 0 0,0,0,0,0
+
+
+# SPECIAL
+$ LAMP 0 3 20
+$ SWITCH 0 3 0
+#
+
+# CHEST
+$ 1 BOMB_BAG 1 `It’s a Bomb Bag! Now you can hold bombs.;Place bombs with ‘q’.`
+
+
+
+
+
+

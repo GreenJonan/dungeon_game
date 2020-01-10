@@ -1,0 +1,59 @@
+//
+//    LAYOUT SCAFFOLD:
+//
+//
+//
+//
+//    Aside from tile map, use ‘$’ to indicate each element.
+//
+//
+//  # STATUS <is_dark>  <locked_type>
+//  (locked_type: -1 ==> locked when enemy, 0 ==> always open,
+//   1==> open when kill all enemies)
+//
+//
+//  # SIZE <width> <height>
+//  (follow by tile translation, each row being a new line)
+//
+//
+//  # EXIT
+//  <room_id>  <exit_id>  <switch_id>  <status>
+// <status> = <locked>,<is_switch>,<bombable>,<portal>,<hidden> (portal unused)
+//
+//  (first two ==> exit connected to. If switch activated then open/close
+//
+//
+//
+//  # CHEST
+//  <is_locked>  <item>  <num>  <msg>
+//
+//
+//
+//  # SPECIAL
+//  (special trigger/entity blocks with input depending on <name>)
+//
+//  NOTE: The order in which special entities are given matters, they are the
+//        entities which will be drawn last, hence have highest priority.
+//
+//  phone message -> 
+//    “msg when answer phone” RING_ID LOCAL_DIST TRIG_ID IS_TRIG INVISIBLE
+//
+//  push block -> 
+//    direction_can_push_from  push_num (-1 ==> inf)   strength
+//
+//  pop block -> 
+//    up/down trig_num
+//
+//  switch -> 
+//    closed trig_id type 
+//    (0 == simple, 1 == AND, 2 == OR, 3 == XOR, 
+//     4 == NOR, 5 == NAND, 6 == XNOR, 7 == EQ)
+//
+//  lamp ->
+//    on/off trig_id light_dist
+
+
+# SIZE 3 3
+```
+```
+```

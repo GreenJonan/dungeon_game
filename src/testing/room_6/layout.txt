@@ -1,0 +1,48 @@
+# SIZE 10 8
+ 00`0 000? 00
+ 02L0 2220 20
+ 02L0 `UUU U0
+ 0UL0 T`P` +0
+ 0UL0 00`L 00
+ 02L2 222L +0
+ 0hL` ``PL +0
+ 0000 0000 00
+
+
+/# CHEST
+/$ 0 BASIC_SWORD 1 DEFAULT
+
+
+# SPECIAL
+$ TELEPHONE 0 1 1 3 0 `This is a test message. Hello World!`
+$ POP_BLOCK 0 1
+$ POP_BLOCK 0 1
+$ POP_BLOCK 0 1
+$ POP_BLOCK 0 1
+$ POP_BLOCK 1 1
+$ POP_BLOCK 0 1
+$ PUSH_BLOCK 1,1,1,1 -1 0 
+$ PUSH_BLOCK 0,1,0,1 -1 0 
+$ SWITCH 0 1 3
+$ SWITCH 1 1 3
+$ SWITCH 0 1 3
+$ LAMP 0 1 3
+
+
+/# STATUS 1 0
+
+
+// NOTE: The order in which special entities are given matters,
+// they are the entities which will be drawn last, hence have highest priority.
+
+/ phone message -> 
+/ “msg when answer phone” RING_ID LOCAL_DIST TRIG_ID IS_TRIG INVISIBLE
+
+/push block -> direction_can_push_from  push_num (-1 ==> inf)   strength
+
+/ pop block -> up/down trig_num
+
+/ switch -> closed trig_id type 
+/ (0 == simple, 1 == AND, 2 == OR, 3 == XOR, 4 == NOR, 5 == NAND, 6 == XNOR, 7 == EQ)
+
+// lamp: on/off trig_id light_dist

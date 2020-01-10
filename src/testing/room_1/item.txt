@@ -1,0 +1,4 @@
+/ <item> <x> <y> <v_x> <v_y> <number> <msg>
+/
+$ HEART 5,12 0,0 1 DEFAULT
+$ BOMB_BAG 5,7 0,0 1 `LOOK! its a bomb bag, equip it to use bombs.`

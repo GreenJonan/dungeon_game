@@ -1,0 +1,2 @@
+$ MAX_HEALTH 6
+$ HEALTH 3

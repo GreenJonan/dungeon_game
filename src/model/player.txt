@@ -1,0 +1,44 @@
+//
+//      PLAYER
+//
+// # DEFAULT
+// (this stops reading any information after this macro, i.e. forces end of file.)
+//
+//
+//
+// # STATUS (custom set player properties, requires # to end input block)
+//
+//  $ MAX_HEALTH <n>
+//  $ HEALTH <n>
+//  $ MANA <n>
+//  $ MAX_MANA <n>
+//  $ ROOM <room_number> (counts from 1)
+//  $ POSITION <x>,<y>
+//  $ VELOCITY <v_x>,<v_y>
+//  $ CLOCK <n>
+//  $ TIMER <n>
+//  $ MASS <n>
+//  $ FLY <n>
+//  $ STATUS <clip>,<paralysed>,<poison>,<override_clip>   (note: para,poi not used).
+//  $ DIRECTION <n>  (0,1,2,3  <==> up,left,down,right)
+//  $ LIGHT_DIST <n> (how far can see away in the dark)
+//  #
+//
+//  NOTE: any order of input macros is okay, if # ends code block, spaces are also
+//          okay.
+//
+//
+//
+//
+//  # ITEMS         (what items the player will have by default)
+//  $ <name> <num>
+//  #
+//
+//
+//
+//  # MOVES (followed by string of default/automatic inputs, new line ends block)
+
+
+
+
+

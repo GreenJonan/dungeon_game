@@ -1,0 +1,10 @@
+// <enemy>  <x>,<y>  <v_x>,v_y>  <direction>  <champion>  <has_item>  <default> -
+//  <health>  <clock>  <mass>  <rnd>  - 
+//  <vis_dist>  <eyesight>  <ai> -
+//  <touch_dmg>  <shield>
+//
+// (If holding item, the enemy line is followed by):
+//  <name>  <num>  <msg>
+//
+//    lines 2,3,4 are read given default != 0.
+//    REMEBER: punctuations! (-,/,\)

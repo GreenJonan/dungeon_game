@@ -1,0 +1,29 @@
+
+
+# SIZE 13 7
+0000 00000 0000
+0``` ````0 ```0
+0``` T```0 ```0
+&``` ````U ```&
+0``` ````0 ```0
+0``` +```0 ```0
+0000 00000 0000
+
+
+
+# EXIT
+$ 1 3 0 0,0,0,0,0
+$ 4 1 0 0,0,0,0,0
+
+
+
+
+# SPECIAL
+$ TELEPHONE 1 0 0 0 0 `You can activate/interact with objects by entering ‘e’.`
+$ POP_BLOCK 1 2
+$ SWITCH    0 2 0
+#
+
+
+
+

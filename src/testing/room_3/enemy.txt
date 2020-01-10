@@ -1,0 +1,16 @@
+/$ <enemy_type>   <x,y>   <v_x,v_y>   <direction>  <challenge>   <item_b>   <default> 
+/ - <health>   <clock>   <mass>  <rnd>  -  <vis_dist>  <eyesight>   <ai>  
+/ -  <touch_dmg>  <shield>
+/
+/
+$ SLIME 7,2 0,0 0 0 0 1
+/
+$ SLIME 5,4 0,0 0 0 1 1
+$ HEART 1 NONE
+/
+$ SLIME 4,1 0,0 0 1 0 0 \ 10 2 -2 -1 \ 0 0 0 \ 4 0
+
+
+
+/ note that mass = -1 ==> infinitely heavy, hence default requires -2.
+/ at the moment, no default for vision, for the meantime it is -10.

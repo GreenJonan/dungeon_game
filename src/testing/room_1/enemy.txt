@@ -1,0 +1,3 @@
+/ <enemy> <x> <y> <v_x> v_y> <tick_speed> /0 sets default <shield> <champion> 
+/
+$ NONE
