@@ -684,8 +684,8 @@ Item* pop_item_ls_room(Item_ls* i_ls, Room* r) {
     
     Item* i = i_ls->item;
     
-    int is_head = 0;
-    if (r->items == i_ls) { is_head = 1;}
+    //int is_head = 0;
+    //if (r->items == i_ls) { is_head = 1;}
     
     
     int prev_null = 0;
@@ -738,8 +738,8 @@ Item* pop_item_ls_npc(Item_ls* i_ls, Npc* n) {
     
     Item* i = i_ls->item;
     
-    int is_head = 0;
-    if (n->items == i_ls) { is_head = 1;}
+    //int is_head = 0;
+    //if (n->items == i_ls) { is_head = 1;}
     
     
     int prev_null = 0;

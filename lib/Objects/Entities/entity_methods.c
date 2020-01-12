@@ -614,7 +614,7 @@ int increment_entity_clock(Entity* a, int t) {
         a->timer = a->clock;
     }
     else  {
-        a->timer = a->timer--;
+        a->timer = a->timer - 1;
     }
     return 0;
 }

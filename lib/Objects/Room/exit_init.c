@@ -256,7 +256,7 @@ int connect_exit_with_other_exit(Game* game, Exit* exit, int* progress, int or_r
     
     if (LOADING_PROGRESS) {
         loading_progress(*progress);
-        *progress = (*progress) += 1;
+        *progress = (*progress) + 1;
     
         if (*progress >= 4) {
             *progress = 0;
