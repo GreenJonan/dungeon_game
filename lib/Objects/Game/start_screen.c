@@ -23,9 +23,11 @@ int start_menu(Game* game, int cursor) {
     //int cursor = 1;
     
     while (command != WAIT_C) {
+
         
         draw_start_screen(cursor);
         command = receive_input_command(game);
+
         
         if (command == MOVE_UP_C) {
             if (cursor - 1 > 0) {

@@ -15,12 +15,20 @@ char get_first_char();
 
 
 char receive_input_command(Game* game) {
-    char output = WAIT_C;
+    char name[] = "receive_input_command";
     
+    if (game == NULL) {
+        game_null_error(name);
+        return WAIT_C;
+    }
+    
+    
+    char output = WAIT_C;
 
     // ifthe game is not setup, default to simple commands,
     if (!game->is_setup) {
         // prompt = yes, char = no,
+     
         output = simple_input(game, 1, 0);
     }
     

@@ -14,6 +14,7 @@ int start_game(Game* game) {
     game->game_over = 0;
     game->draw_hud_items = 1;
     game->player_turn = 1;
+    game->is_setup = 0;
     
     
     // set all trig_ids to zero by default
@@ -49,7 +50,7 @@ int start_game(Game* game) {
     if (exit) {
         return -1;
     }
-    
+
     
     //////////////////////////////////////////////////////////////
     
